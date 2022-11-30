@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-heading">Favourite Movie Franchise</h1>
+        <ul>
+            <li class="list-itmes">The Matrix</li>
+            <li class="list-itmes">Star Wars</li>
+            <li class="list-itmes">Harry Potter</li>
+            <li class="list-itmes">Lord of the Rings</li>
+            <li class="list-items">Marvel</li>
+        </ul>
+    </div>
+    <button type="submit">This is an event listener</button>
+    <div id="buttons"> <!-- Step 1 -->
+        <button class="buttonClass">Click me</button>
+        <button class="buttonClass">Click me</button>
+        <!-- buttons... -->
+        <button class="buttonClass">Click me</button>
+        </div>
+        <form>
+            <label for="comments">Comments</label>
+            <input id="comments" name="comments" type="text" placeholder="Email">
+            <div class="error" class="success"></div>
+            <div class="comments"></div>
+        </form>
+        <script>
+        document.getElementById('buttons')
+        .addEventListener('click', event => { 
+        console.log('Click!');
+        }
+        );
+        </script>
+    <script src="index.js" defer></script>
+    <p>
+        <?php
+        echo "Hello, world!";
+        ?>
+        </p>
+</body>
+</html>

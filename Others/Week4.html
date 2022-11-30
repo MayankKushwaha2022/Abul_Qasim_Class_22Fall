@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice</title>
+</head>
+
+<body>
+    <fieldset style = "background-color:pink">
+        
+ 
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+    <br>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br>
+    <br>
+    <hr>
+    <strong><input type="submit" value="Submit*" style="background-color:darkblue; color:white" ></strong>
+    <input type="submit" value="Cancel" style="background-color:lightgrey; color:white" >
+    </fieldset>
+    <br><br>
+    <fieldset style = "background-color:yellow">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+    </fieldset>
+    <br><br>
+    <fieldset style = "background-color:green; color:white">
+    <label for="fruits">Choose a fruit:</label>
+    <select id="fruits" name="fruits" size="3" multiple>
+        <option value="peach">Peach</option>
+        <option value="pear">Pear</option>
+        <option value="banana">Banana</option>
+        <option value="apple">Apple</option>
+    </select><br><br>
+    <hr>
+    <label for="vegetables">Choose a Vegetable:</label>
+    <select id="vegetables" name="vegetables">
+        <optgroup label="Good Vegetables">
+            <option value="Bitter Gourd">Bitter Gourd</option>
+            <option value="Brinjal">Brinjal</option>
+        </optgroup>
+        <optgroup label="Bad Vegetables">
+            <option value="Onion">Onion</option>
+            <option value="Okra">Okra</option>
+        </optgroup>
+    </select>
+<br><br>
+<hr>
+<br>
+    <input type="submit" value="submit Query"><br><br>
+</fieldset >
+<br><br>
+    <fieldset style = "background-color:red; color:white">
+    <p>Please select your favourite language:</p> 
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+    <br><br>
+    <input type="submit" value="Submit radio button choices">
+</fieldset>
+    <br>
+    <fieldset style = "background-color:purple; color:white">
+    <p>Please select your favourite ride:</p>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
+    <input type="submit" value="Submit Checkbox choices">
+</fieldset>
+    <br><br>
+    <br><br>
+    <fieldset style = "background-color:burlywood; color:white">
+    <label for="textareademo">Textarea Demo:</label>
+    <br><br>
+    <textarea id="textareademo" name="textareademo" rows="4" cols="50">
+        This is the default text to display
+    </textarea>
+    <br><br>
+    <input type="submit" value="Submit Text">
+</fieldset>
+    <br><br>
+    <button type="button">I am a button</button>
+    <br><br>
+    <fieldset style = "background-color:palegreen">
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+        <input type="submit">
+   
+    <br><br>
+    </fieldset >
+    <br><br>
+    <br><br>
+    <fieldset style = "background-color:orange; color:white">
+    <input type="button"> (Defines a simple push button, which can be programmed
+                            to perform a task on an event.)
+                            <br><br>
+    <input type="checkbox">(allows to select multiple option)<br><br>
+    <input type="color"><br><br>
+    <input type="date"><br><br>
+    <input type="datetime-local"> (Defines an input field for entering a date without
+                                     time zone.)<br><br>
+    <input type="email" placeholder="enter email"><br><br>
+    <input type="file"> (Defines to select the file from device storage.)<br><br>
+    <input type="hidden"><br><br>
+    <input type="image"> (Defines a graphical submit button.)<br><br>
+    <input type="month"> (Defines a control with month and year, without
+                            time zone.)<br><br>
+    <input type="number" placeholder="enter number"><br><br>
+    <input type="password" placeholder="enter password"><br><br>
+    <input type="radio"> (allows to select one option)<br><br>
+    <input type="range"><br><br>
+    <input type="reset"><br><br>
+    <input type="search" placeholder="search here"> (Defines a single line text field for entering a
+                            search string.)<br><br>
+    <input type="submit"><br><br>
+    <input type="tel" placeholder="enter telephone number"><br><br>
+    <input type="text" placeholder="enter text"> (default value)<br><br>
+    <input type="time"><br><br>
+    <input type="url" placeholder="enter URL here"><br><br>
+    <input type="week"> (Defines a field to enter the date with week-year,
+                            without time zone)<br><br>
+    </fieldset>
+
+<fieldset>
+<input type="radio" id="male" name="gender"value="male" />
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female" />
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other" />
+<label for="other">Other</label><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Select how often you purchase Music CDs:</legend>
+<label for="week">
+<input type="radio" name="often" id="week"/>Weekly</label>
+<label for="few">
+<input type="radio" name="often" id="few"/>A few CDs each year</label>
+<label for="monthly">
+<input type="radio" name="often" id="monthly"/>Monthly</label>
+<label for="never">
+<input type="radio" name="often" id="never"/>Never purchase</label>
+</fieldset>
+
+
+</body>
+
+</html>

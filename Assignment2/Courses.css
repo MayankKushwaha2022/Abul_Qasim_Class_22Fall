@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: azure;
+}
+
+body {
+    margin-right: 20px;
+}
+
+
+
+nav {
+    padding: 10px;
+    background-color:rgb(243, 239, 6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+nav>a {
+    display: inline;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid rgb(58, 55, 37);
+    border-radius: 30px;
+    float: left;
+    color: green;
+}
+
+nav a::after {
+    color: #fff;
+    transition: all 0.3s ease;
+    background: #ff004f;
+    bottom: -6px;
+}
+
+
+nav li,
+nav ul {
+    display: inline;
+    margin: 0 10px;
+    justify-content: center;
+}
+
+.navelements a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover
+{
+    background-color: #ff004f;
+    color: #fff;
+    padding: 10px 10px;
+    border: 2px solid rgb(58, 55, 37);
+    border-radius: 40px;
+}
+
+.navelements .fa:hover
+{
+    color: #fff; 
+}
+.navelements a:hover {
+    transition: all 0.3s ease;
+}
+
+.btn1:hover
+{
+    color: #fff;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.btn,
+.btn1 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: red;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn1 {
+    margin-top: 30px;
+}
+
+.about {
+    column-count: 5;
+    text-align: right;
+    background-color: #ff004f;
+}
+
+
+
+.bcontainer1 {
+    display: flex;
+    background-color: rgb(17, 131, 4);
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bcontainer2 {
+    display: flex;
+    background-color: rgb(158, 23, 23);
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.bcontainer3 {
+    display: flex;
+    background-color: rgb(8, 42, 106);
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.box {
+    padding: 20px 40px 100px 30px;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    border: 2px red;
+    float: left;
+}
+
+.box img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.show {
+    display: block;
+}
+
+.boxcontainer1,
+.boxcontainer2 {
+    margin-top: 20px;
+    
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: red;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: red;
+    color: white;
+}
+
+.sort1{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    white-space: nowrap;
+    border: none;
+    background: red;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+.sort2 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    white-space: nowrap;
+    border: none;
+    background: red;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-left: 1200px;
+    cursor: pointer;
+}
+
+.sort1:hover, .sort2:hover{
+    background-color: #ddd;
+}
+
+.sort1.active, .sort2.active {
+    background-color: red;
+    color: white;
+}
+
+#myInput {
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+}
+
+.find {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: red;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.find:hover {
+    background-color: #ddd;
+}
+
+.find.active {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./formValidation.css">
+    <script src="./formValidation.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" name="form" action="">
+            <h1>Weekly Kitten Picture Subscription</h1>
+            <div class="input-control">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="text" placeholder="Email">
+                <div class="error" class="success"></div>
+            </div>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="User name">
+                <div class="error" class="success"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password">
+                <div class="error" class="success"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Retype Password</label>
+                <input id="password2" name="password2" type="password" placeholder="Password">
+                <div class="error" class="success"></div>
+            </div>
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+            <label for="vehicle1"> I agree to receive weekly kitten pictures newsletter</label><br>
+            <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+            <label for="vehicle2"> I agree to the terms and conditions</label><br>
+
+            <button type="submit">Sign Up</button>
+            <button type="submit">Reset</button>
+            
+        </form>
+    </div>
+</body>
+</html>

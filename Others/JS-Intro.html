@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JScript Intro</title>
+    <script >/* A JavaScript Comment */
+        //alert("Hello World!");
+    </script>
+    <script src="example.js"></script>
+    <script src="./randomExample2.js"></script>
+</head>
+<body>
+    <input type="button" value="This is a button" onClick="alert('This is an inline onClick function coming from .html file');" />
+    <button onclick="myFunction();"> Function 1! </button>
+    <button onclick="foo();">Function 2!</button>
+    <button onclick="randomSong();">Random song</button>
+    <button onclick="myFuncPrint();">myfunc</button>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <p id="demo9"></p>
+
+        <script>
+        document.getElementById("demo").innerHTML = 
+        "'John' is " + typeof "John" + "<br>" +
+        "3.14 is " + typeof 3.14 + "<br>" +
+        "NaN is " + typeof NaN + "<br>" +
+        "false is " + typeof false + "<br>" +
+        "[1, 2, 3, 4] is " + typeof [1, 2, 3, 4] + "<br>" +
+        "{name:'John', age:34} is " + typeof {name:'John', age:34} + "<br>" +
+        "new Date() is " + typeof new Date() + "<br>" +
+        "function () {} is " + typeof function () {} + "<br>" +
+        "myCar is " + typeof myCar + "<br>" +
+        "null is " + typeof null+ "<br>" +"<br>" +"<br>" +
+
+        
+
+        "john.constructor is a: " + "john".constructor + "<br>" +
+        "(3.14).constructor is a: " + (3.14).constructor + "<br>" +
+        "false.constructor is a: " + false.constructor + "<br>" +
+        "[1,2,3,4].constructor is a: " + [1,2,3,4].constructor + "<br>" +
+        "{name:'john', age:34}.constructor is a: " + {name:'john', age:34}.constructor + "<br>" +
+        "new Date().constructor is a: " + new Date().constructor + "<br>" +
+        "function () {}.constructor is a: " + function () {}.constructor;
+
+        /* While Example: */
+        let text = "";
+        let i = 0;
+        while (i < 10) {
+        text += "<br>The while loop number is " + i;
+        i++;
+        }
+        document.getElementById("demo2").innerHTML = text;
+
+         /* Do-While Example: */
+        let text2 ="";
+        let j=0;
+        do
+        {
+            text2 += "<br>The do-while loop number is " + j;
+            j++;
+        }
+        while (j<3);
+        document.getElementById("demo3").innerHTML = text2;
+
+        /* For Example: */
+        let text3 ="";
+        let k=0;
+        for (k=0;k<3;k++)
+        {
+            text3 += "The for loop number is " + k + "<br>";
+        }
+        document.getElementById("demo4").innerHTML = text3;
+
+        /* object literal notation*/
+        let years = [1855, 1648, 1420];
+        const countries = [ "Canada", "France", "Germany" ];
+
+        /* use the Array() constructor*/
+        /* Below is a Single dimensional array*/
+        const cars = new Array("Saab", "Volvo", "BMW");
+
+        /* To change an element in an array use the following syntax*/
+        cars[0] = "Opel";
+
+        for (let x of cars)
+        {
+            console.log(x);
+        }
+
+        for (let i=0; i<cars.length;i++)
+        {
+            let x = years[i];
+            console.log(x);
+        }
+
+        var nums1 = [2, 4, 6];
+        nums1.push(8); // nums = [2, 4, 6, 8]
+        document.getElementById("demo7").innerHTML = nums1;
+
+        var nums2 = [2, 4, 6];
+        var x1 = nums2.pop(); // returns 6, nums = [2, 4]
+        console.log(x1);
+
+        var nums3 = [2, 4, 6];
+        nums3.unshift(0); // nums = [0, 2, 4, 6]
+        console.log(nums3);
+
+        var nums = [2, 4, 6];
+        var x = nums.shift(); // returns 2, nums = [4, 6]
+
+        var nums = [2, 4, 6, 8, 10];
+        // Deletes all elements from index 3 to the end
+        nums.splice(3); // nums = [2, 4, 6]
+        // Deletes 2 elements starting at index 0 
+        nums.splice(0, 2); // nums = [6]
+        // Adds 3, 5 starting at index 0
+        nums.splice(0, 0, 3, 5); // nums = [3, 5, 6]
+        // Adds 7, 9, 11 starting at index 2 
+        nums.splice(2, 0, 7, 9, 11); // nums = [3, 5, 7, 9, 11, 6]
+
+        /*
+        declare variables
+        let myFunction = function namedFunction()
+        {
+           return statements 
+        }
+        */
+
+        let s=20;
+        let t=30;
+        let multiply = function func_name(s, t) 
+        { 
+           return s * t;
+        };
+        var z = multiply(5,10);
+
+        document.getElementById("demo5").innerHTML = z;
+
+        /*Anonymous Function - These functions are unnamed */
+        const myfunc1 = function (s) 
+        {
+            return s * s;
+        };
+
+        var ab = myfunc1(11);
+        document.getElementById("demo6").innerHTML = ab;
+
+        /*JavaScript-Arrow functions
+        Shorthand way to write anonymous functions*/
+
+        const arrow1 = () => {
+        console.log("An arrow func!");
+        };
+        arrow1();
+        const squareArrow = (x) => x * x
+        console.log(squareArrow(5));
+
+        /*JavaScript-Rest parameters (…)*/
+
+        function fun(...input){
+        let sum = 0;
+        for(let i of input){ //using for of
+        sum+=i;
+        }
+        return sum;
+        }
+        console.log(fun(1,2)); //output 3
+        console.log(fun(1,2,3)); // output6
+        console.log(fun(1,2,3,4,5)); // output15
+
+        /*JavaScript Object | Overview*/
+        /*
+        Let obj = { property_1: value_1, 
+                    property_2 : value_2, 
+                    property n: value_n };
+        */
+
+        let myob = {name: "bob",
+                    goto: "test"}; // create object
+        let theName = myob.name;
+        let dest = myob[ 'goto' ]; // reference the object properties
+
+        console.log(myob);
+        console.log(theName);
+        console.log(myob.goto);
+        console.log(dest);
+        console.log("------------------");
+        /*USING A CONSTRUCTOR FUNCTION
+        1.Define the object type by writing a constructor function. 
+        2.Create an instance of the object with new.*/
+
+        function Car(make, model, year) 
+        {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+        }
+            //create an object called mycar
+            let mycar = new Car("Eagle","Talon Tsi","1993");
+            console.log(mycar.make); 
+            console.log(mycar.year); // accessing properties 
+            console.log("------------------");
+
+        /*
+        JavaScript Math Object
+        • Math.round(x) returns the value of x rounded to its nearest integer.
+        • Math.pow(x,y) returns the value of x to the power of y.
+        • Math.sqrt(x) returns the square root of x
+        • Math.abs(x) returns the absolute (positive) value of x
+        • Math.random() returns a random number between 0 (inclusive), and 1 
+        (exclusive).
+        • The Math class also has many other functions like sin, cos, tan, floor, 
+        ceil, log, exp, etc
+        */
+
+        console.log("Math Round function: ", Math.round(2.367546));
+        console.log("Math to the Power function: ", Math.pow(2,3));
+        console.log("Math Square root function: ", Math.sqrt(625));
+        console.log("Math absolute function: ", Math.abs(-564));
+        console.log("Math random function: ", Math.random());
+        console.log("Math random function: ", Math.floor(Math.random()));
+        console.log("Math trignometric sin function (value is in radians): ", Math.sin(1.57079633));
+        console.log("Math floor function: ", Math.floor(2.3));
+        console.log("Math floor function: ", Math.floor(2.5));
+        console.log("Math floor function: ", Math.floor(2.8));
+        console.log("Math floor function: ", Math.floor(-6.8));
+        console.log("------------------");
+        console.log("Math ceil function: ", Math.ceil(2.3));
+        console.log("Math ceil function: ", Math.ceil(2.5));
+        console.log("Math ceil function: ", Math.ceil(2.8));
+        console.log("Math ceil function: ", Math.ceil(-6.8));
+        console.log("------------------");
+
+        document.getElementById("demo8").innerHTML=Math.random();
+
+        let pets = ["dog", "cat", "rabbit", "hamster"]; 
+        pets.sort(); 
+        console.log("Alphabetically", pets); 
+
+        /*
+        array.sort (function(a,b){return a-b})
+        OR
+        array.sort((a,b) =>{a-b})
+
+        a-b = positive = => b sorted before value a.
+        a-b = negative = => a sorted before value b.
+        a-b = 0 = => items stay in the same.
+        */
+
+        /*Sort Compare function*/
+        let grades = [88, 94, 72, 99, 53, 77];
+        //Sort the following array from highest to lowest 
+        grades.sort((a, b) => b - a);
+        console.log("Highest to Lowest", grades);
+        //Sort the following array from lowest to highest 
+        grades.sort((a, b) => a - b);
+        console.log("Lowest to Highest", grades);
+
+        /*
+        Filtering Arrays – filter()
+        • Filter is a JavaScript array method that creates a new array based on whether or not elements pass a test 
+        provided by a function -> we call it callback function 
+        • The callback function will be called for every element that you're iterating over in your original array.
+        • Each time the function executes, the new value will be added to the new array
+        • This function accepts current value, index, and array. 
+        • The current value is the only required parameter.
+        */
+
+        const groceries = [ 
+                            { item: 'apples', type: 'fruit' }, 
+                            { item: 'cereal', type: 'pantry' }, 
+                            { item: 'pork chops', type: 'meat' }, 
+                            { item: 'bananas', type: 'fruit' }, 
+                            { item: 'broccoli', type: 'vegetable' }]; 
+        //Filter the following array to include only those grocery items that are fruits.
+        const fruit = groceries.filter(
+                                        function(item)
+                                            { return item.type === 'fruit'; 
+                                        }); 
+        console.log('Fruits', fruit);
+        console.log();
+
+        // OR use an arrows function
+        const fruits = groceries.filter((item) => { return item.type === 'fruit'; }); 
+        console.log('Fruits', fruit);
+        const movie = [ 
+                        { title: 'Avatar', year: 2009, rating: '3star' }, 
+                        { title: 'I Am Legend', year: 2007, rating: '3star' }, 
+                        { title: '300', year: 2006, rating: '5star' }, 
+                        { title: 'The Avengers', year: 2012, rating: '3star' }, 
+                        { title: 'The Wolf of Wall Street', year: 2013, rating: '5star' } ]; 
+        //Create a new array that contains only those movies that are PG-13. 
+        let ratedPg13R = movie.filter((movie) => movie.rating === '3star');
+        console.log("Array that only has PG-13 movies", ratedPg13R)
+        const movies = [ 
+                        { title: 'Avatar', year: 2009, rating: '3star' }, 
+                        { title: 'I Am Legend', year: 2007, rating: '3star' }, 
+                        { title: '300', year: 2006, rating: '5star' }, 
+                        { title: 'The Avengers', year: 2012, rating: '3star' }, 
+                        { title: 'The Wolf of Wall Street', year: 2013, rating: '5star' } ]; 
+                        debugger
+        //Create a new array that just contains the movie titles. 
+        var movieTitles = movies.map((movie) => movie.title); 
+        console.log("Array with only movie titles", movieTitles);
+        const numbers = [1, 2, 3, 4];
+        const doubled = numbers.map(item => item * 2);
+        console.log(doubled); // [2, 4, 6, 8]
+
+        var numbers123=[1, 2, 3, 4, 5];
+        numbers123.push(6);
+        numbers123.unshift(7);
+        numbers123.pop();
+        numbers123.shift();
+        
+        document.getElementById("demo8").innerHTML = numbers123;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Mayank Kushwaha">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #t1,
+        #t1>tr {
+            border: 1px solid black
+        }
+
+        #t1 tr td {
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <h3 style="color: Red">Order Form</h3>
+            <fieldset>
+                <legend>Basic Information</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="name">Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="name" name="name" placeholder="Mayank" size="30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" name="email" placeholder="kush0014@algonquinlive.com"
+                                    size="30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Address: </p>
+                            </td>
+                            <td><textarea id="textarea" name="textarea" rows="6" cols="25">
+                            </textarea> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="postcode">Postcode:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="postcode" name="postcode"><br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Product Information</legend>
+                <table id="t1">
+                    <tbody>
+                        <tr style="text-align: center;">
+                            <td><b> Product </b></td>
+                            <td><b> Part Number </b></td>
+                            <td style="width: 100px"><b> Quantity </b></td>
+                            <td><b> Unit Price </b></td>
+                            <td style="width: 200px"><b> Subtotal </b></td>
+                        </tr>
+                        <tr>
+                            <td>Box</td>
+                            <td>AC100</td>
+                            <td></td>
+                            <td>$5</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Coffee Table</td>
+                            <td>AC200</td>
+                            <td></td>
+                            <td>$100</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Chair</td>
+                            <td>AC300</td>
+                            <td></td>
+                            <td>$150</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Desk</td>
+                            <td>AC400</td>
+                            <td></td>
+                            <td>$120</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Communication Table</td>
+                            <td>AC400</td>
+                            <td></td>
+                            <td>$120</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="text-align: right;">Total:</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <br>
+            <h4>Credit Card Information</h4>
+            <table id="t2">
+                <tbody>
+                    <tr>
+                        <td>Card Type:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="Mastercard" name="Payment" value="Mastercard">
+                            <label for="Mastercard">Mastercard</label><br>
+                        </td>
+                        <td><label for="CardNumber">Card Number:</label>
+                            <input type="number" id="CardNumber" placeholder="0000-0000-0000-0000">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="VISA" name="Payment" value="VISA">
+                            <label for="VISA">VISA</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="GiftCard" name="Payment" value="Gift Card">
+                            <label for="GiftCard">Gift Card</label>
+                        </td>
+                        <td><label for="Expiry">Expiry Date:</label>
+                            <input type="datetime-local" id="Expiry">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table id="t3">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><b>Delivery Address:</b></p>
+                        </td>
+                        <td> <textarea id="textarea2" name="textarea" rows="6" cols="25">
+                        </textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <input name="b1" id="b1" type="submit" value="Send Order">
+            <input name="b2" id="b2" type="reset" value="Clear Form">
+        </fieldset>
+    </form>
+</body>
+
+</html>

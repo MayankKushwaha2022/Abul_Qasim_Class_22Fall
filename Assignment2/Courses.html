@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Kushwaha Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./Courses.css">
+</head>
+
+<body>
+    <!-- === Header of the page == -->
+    <header>
+        <nav>
+            <a href="https://www.algonquincollege.com/">Ed-Dev University</a>
+            <ul class="navelements">
+                <li><a href="index.html" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="contact.html"><i class="fa fa-mobile-alt"></i>Sign up</a></li>
+                <li><a href="resume.html"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+            <input type="text" id="myInput" placeholder="Search for courses.." title="Type in a name">
+        </nav>
+    </header>
+    <div id="myBtnContainer">
+        <button class="btn " onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('level1')">Beginner Level</button>
+        <button class="btn" onclick="filterSelection('level2')">Intermediate Level </button>
+        <button class="btn" onclick="filterSelection('level2')">Expert Level </button>
+        <button class="sort1" onclick="myFunction1()">Sort by Level</button>
+        <button class="sort2" onclick="myFunction2()">Sort by Language</button>
+    </div>
+
+    <div class="bcontainer1">
+        <div class="box SQL">
+            <img src="/Assignment2/Pictures/Google Data Analytics Professional Certificate.png" alt="Java">
+            <h3>Google Data Analytics Professional Certificate</h3>
+            <h4>Language: SQL</h4>
+            <h5>Level: Beginner</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box SQL">
+            <img src="/Assignment2/Pictures/Complete Oracle SQL Certification Course.png" alt="Hardware">
+            <h3>The Complete Oracle SQL Certification Course</h3>
+            <h4>Language: SQL</h4>
+            <h5>Level: Beginner</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box SQL">
+            <img src="/Assignment2/Pictures/Intro to SQL.png" alt="Math">
+            <h3>Introduction to SQL</h3>
+            <h4>Language: SQL</h4>
+            <h5>Level: Beginner</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box SQL">
+            <img src="/Assignment2/Pictures/SQL Essentials Training.png" alt="Database">
+            <h3>SQL Essentials Training & Certification</h3>
+            <h4>Language: SQL</h4>
+            <h5>Level: Beginner</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box SQL">
+            <img src="/Assignment2/Pictures/Learn SQL.png" alt="Envrionment">
+            <h3>Learn SQL</h3>
+            <h4>Language: SQL</h4>
+            <h5>Level: Beginner</h5>
+            <p>Description: </p>
+        </div>
+    </div>
+    <div class="bcontainer2">
+        <div class="box JS">
+            <img src="/Assignment2/Pictures/The Complete 2023 Web Development.png" alt="ubuntu_linux">
+            <h3>The Complete 2023 Web Development Bootcamp</h3>
+            <h4>Language: JavaScript</h4>
+            <h5>Level: Beginner</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box JS">
+            <img src="courses/web2.jpg" alt="web">
+            <h3>JavaScript: The Advanced Concepts</h3>
+            <h4>Language: JavaScript</h4>
+            <h5>Level: Expert</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box JS">
+            <img src="/Assignment2/Pictures/Javascript for Beginners Specialization.png" alt="Java OOP">
+            <h3>JavaScript for Beginners Specialization</h3>
+            <h4>Language: JavaScript</h4>
+            <h5>Level: Beginner</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box JS">
+            <img src="/Assignment2/Pictures/Javascript Course.png" alt="Globalization">
+            <h3>JavaScript Course</h3>
+            <h4>Language: JavaScript</h4>
+            <h5>Level: Intermediate</h5>
+            <p>Description: </p>
+        </div>
+    </div>
+    <div class="bcontainer3">
+        <div class="box PHP">
+            <img src="/Assignment2/Pictures/Build Messenger Clone with PHP and MySQL.png" alt="ubuntu_linux">
+            <h3>Build Messenger Clone Using PHP and MySQL</h3>
+            <h4>Language: PHP</h4>
+            <h5>Level: Intermediate</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box PHP">
+            <img src="/Assignment2/Pictures/Create a Netflix Clone - JS_PHP_MySQL.png" alt="web">
+            <h3>Create a Netflix clone from Scratch: JavaScript PHP + MySQL</h3>
+            <h4>Language:PHP</h4>
+            <h5>Level: Expert</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box PHP">
+            <img src="/Assignment2/Pictures/Build a Social Network - JS_PHP_MySQL.png" alt="Java OOP">
+            <h3>Build a Social Network from Scratch: JavaScript PHP + MySQL</h3>
+            <h4>Language: PHP</h4>
+            <h5>Level: Intermediate</h5>
+            <p>Description: </p>
+        </div>
+        <div class="box PHP">
+            <img src="/Assignment2/Pictures/PHP for Absolute Beginners.png" alt="Globalization">
+            <h3>PHP For Absolute Beginners | 6.5 Hour Course</h3>
+            <h4>Language: PHP</h4>
+            <h5>Level: Beginner</h5>
+            <p>Description: </p>
+        </div>
+    </div>
+    <!-- === JS Files === -->
+    <script src="script.js"></script>
+</body>
+
+</html>
